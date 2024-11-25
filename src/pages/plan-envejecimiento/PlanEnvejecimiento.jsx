@@ -4,7 +4,12 @@ import './planEnvejecimiento.css';
 export const PlanEnvejecimiento = () => {
   return (
     <div>
-        <h1>Hola mundo</h1>
+        <h1>PLAN DE ACCION POLITICA PUBLICA ENVEJECIMIENTO Y VEJEZ</h1>
+
+     <table></table>
+
+
+
     </div>
   )
 }
