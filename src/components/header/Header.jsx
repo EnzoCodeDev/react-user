@@ -17,6 +17,9 @@ export const Header = () => {
     name: 'INICIO',
     redirect: '/home',
   }, {
+    name: `PLAN ACCIÓN COMUNAL`,
+    redirect: '/plan-accion-comunal',
+  }, {
     name: `SOBRE NOSOTROS`,
     redirect: '/about',
   }];

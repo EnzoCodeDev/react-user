@@ -6,7 +6,6 @@ import welcome from '../../assets/majos/welcome.jpg';
 import { AllCollection } from '../../components/all-collection/AllCollection';
 export const Home = () => {
     return (
-
         <AnimationPage>
             <div className='container-home'>
                 {/* <SwiperNewClothes />
