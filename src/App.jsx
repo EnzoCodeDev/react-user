@@ -1,16 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { PlanEnvejecimiento } from './pages/plan-envejecimiento/PlanEnvejecimiento'
+import './styles/styles.scss';
+import 'animate.css';
+import { AppRouter } from './routers/AppRouter';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export const App = () => {
   return (
-    <>
-      <PlanEnvejecimiento/>
-    </>
-  )
+    <AppRouter />
+  );
 }
-
-export default App

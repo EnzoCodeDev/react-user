@@ -1,0 +1,164 @@
+@import "../../styles/base/mixinResponse";
+
+.seccion-proyect {
+    border-bottom: 1px solid #605c4e80;
+    height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+    color: #b67d12 !important;
+    background-color: transparent;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #b67d12 !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img-header {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+.container {
+    background-color: #8c8c8c;
+    margin: auto;
+
+    @include desktop {
+        height: 528px;
+    }
+
+    @include tablet {
+        height: 428px;
+    }
+
+    @include mobile {
+        height: 328px;
+    }
+
+    .container-header {
+        height: 100%;
+        position: relative;
+        z-index: 0;
+    }
+}
+
+.container-text {
+    background-color: transparent;
+    color: #faebd7;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: center;
+    position: relative;
+    text-align: start;
+    margin-left: 10%;
+
+    @include desktop {
+        height: 90%;
+    }
+
+    @include tablet {
+        height: 90%;
+    }
+
+    @include mobile {
+        height: 100%;
+        margin-left: 12%;
+    }
+
+    p {
+        background-color: transparent;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        z-index: 10;
+    }
+
+    &__1 {
+        color: #fdfcfc;
+        font-weight: 700;
+        font-family: Nunito Sans;
+
+        @include desktop {
+            font-size: 15px;
+            letter-spacing: 8px;
+        }
+
+        @include tablet {
+            font-size: 15px;
+            letter-spacing: 7px;
+        }
+
+        @include mobile {
+            font-size: 11px;
+            letter-spacing: 4px;
+        }
+    }
+
+    &__2 {
+        color: #fdfcfc;
+        font-family: Cinzel;
+
+        @include desktop {
+            font-size: 60px;
+        }
+
+        @include tablet {
+            font-size: 55px;
+        }
+
+        @include mobile {
+            font-size: 27px;
+        }
+    }
+
+    .buttom {
+        text-align: center;
+        background-color: #b8934e;
+        z-index: 10;
+
+        @include desktop {
+            font-size: 15px;
+            max-width: 200px;
+        }
+
+        @include tablet {
+            font-size: 15px;
+            max-width: 200px;
+        }
+
+        @include mobile {
+            font-size: 13px;
+            max-width: 140px;
+        }
+
+        &:hover {
+            background-color: #b67d12;
+        }
+    }
+}

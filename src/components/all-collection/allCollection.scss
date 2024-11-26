@@ -1,0 +1,49 @@
+@import "../../styles/base/mixinResponse";
+
+.container-all-component {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .container-card {
+        @include desktop {
+            width: 22%;
+            margin-top: 10px;
+        }
+
+        @include tablet {
+            width: 30%;
+            margin-top: 20px;
+        }
+
+        @include mobile {
+            width: 45%;
+            margin-top: 30px;
+        }
+
+        .img {
+            // max-height: 400px;
+            object-fit: cover;
+
+            @include desktop {
+                height: 400px;
+            }
+
+            @include tablet {
+                height: 380px;
+            }
+
+            @include mobile {
+                height: 240px;
+            }
+        }
+
+        .container-body {
+            font-size: 19px;
+            color: #b67d12;
+            text-align: center;
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+//Setting globlal css
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container_principal {
+  height: 100vh;
+  background-color: var(--white);
+  padding-top: 100px;
+  margin-left: 65px;
+  width: calc(100vw - 65px);
+  transition: all 0.4s ease;
+}
+
+.cursor-poiner {
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    color: #b67d12 !important;
+    transition: all 0.3s ease;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 9px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+body::-webkit-scrollbar-track {
+  background: #b79e6f;
+}
+
+body::-webkit-scrollbar-track:hover {
+  background: #b19665;
+}
+
+body::-webkit-scrollbar-track:active {
+  background: #a48f67;
+}
+
+.input_form {
+  border-radius: 5px !important;
+}
+
+.site-page-header {
+  border: 1px solid rgb(235, 237, 240);
+  border-radius: 8px;
+}
+
+.ant-page-header-back-button {
+  margin-left: 13px !important;
+}
+
+.ant-select-selector {
+  border-radius: 5px !important;
+}
+
+.ant-page-header {
+  padding: 3px;
+
+  .ant-page-header-heading-title {
+    font-size: 17px;
+    margin-top: -2px;
+  }
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 300ms;
+}
