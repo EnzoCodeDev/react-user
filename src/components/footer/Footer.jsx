@@ -6,40 +6,56 @@ import Scroll from 'react-scroll';
 import "./footer.scss";
 import { Link, useNavigate } from "react-router-dom";
 let footerInfo = [{
-  title: 'INFORMACIÓN',
+  title: 'Sede Principal',
   content: [{
-    text: 'Roldanillo, Valle del Cauca',
+    text: 'Cali, Valle del Cauca',
     redirect: false,
     openWindow: false,
   }, {
-    text: '318 - 684 - 9298',
+    text: 'Horarios de Atencion Lunes a Viernes  7:30 a.m. - 5:30 p.m.',
     redirect: false,
     openWindow: false,
   }, {
-    text: 'Lunes a viernes  8 a.m. - 6 p.m.',
+      text: 'Carrera 6 entre calles 9 y 10, Edificio Palacio de San Francisco',
+    redirect: false,
+    openWindow: false,
+  }, {
+    text: '',
     redirect: false,
     openWindow: false,
   }]
 }, {
   title: 'SOBRE NOSOTROS',
   content: [{
-    text: 'SERGIO CANO',
+    text: '',
     redirect: false,
     openWindow: false,
   }, {
-    text: "MAJO'S",
+    text: 'Nit 896671321-5',
+    redirect: false,
+    openWindow: false,
+  }, {
+    text: 'Código Postal 760045',
+    redirect: false,
+    openWindow: false,
+  }, {
+    text: "Gobernación Valle del Cauca",
     redirect: '/about',
     openWindow: false,
   }],
 }, {
-  title: 'MAS SERVICIOS',
+  title: 'Información de Contacto',
   content: [{
-    text: 'Guía de tallas',
-    redirect: '/size-guides',
+    text: '+57 321 871 66 29',
+    redirect: false,
     openWindow: false,
   }, {
-    text: 'Devoluciones y garantías',
-    redirect: 'return-warranties',
+    text: 'PBX: +57 (602) 620 00 00 ',
+    redirect: false,
+    openWindow: false,
+  }, {
+    text: 'contactenos@valledelcauca.gov.co',
+    redirect: false,
     openWindow: false,
   }],
 }];
@@ -87,8 +103,8 @@ export const Footer = () => {
       </div>
       <div className="container-footer-footer">
         <p className="parrafo">
-          &copy; {`${moment().format("YYYY")} `}Sergio Cano.{" "}
-          Todos los derechos reservados
+          &copy; {`${moment().format("YYYY")} `}Copyright.{" "}
+          Todos los derechos reservados <br /> Gobernación del Valle del Cauca
         </p>
         {socials.map((item, index) => (
           <Link key={index} to={item['redirect']} target="_blank"
