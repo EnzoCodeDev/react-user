@@ -11,7 +11,7 @@ import { SizeGuides } from "../pages/size-guides/SizeGuides";
 import { ReturnWarrantiesPage } from "../pages/returns-warranties-page/ReturnWarrantiesPage";
 export const AppRouter = () => {
   return (
-    <BrowserRouter basename='/majo-s-store-react' >
+    <BrowserRouter >
       <div className="container-root-main">
         <div className="container-root-header">
           <Header />

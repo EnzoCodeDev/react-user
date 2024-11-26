@@ -46,7 +46,7 @@ export const Details = () => {
 
     return (
         <AnimationPage>
-            {productData ? (
+            {/* {productData ? (
                 <div className='details'>
                     <div className='container-detail'>
                         <div className='conatiner-breadcrumb'>
@@ -160,7 +160,7 @@ export const Details = () => {
                     subTitle="Lo sentimos, al parecer el producto no existe."
                     extra={<Button onClick={() => navigate(`/`)} type="primary">Volver al inicio</Button>}
                 />
-            )}
+            )} */}
         </AnimationPage>
     )
 }

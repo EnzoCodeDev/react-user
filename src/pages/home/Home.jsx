@@ -9,7 +9,7 @@ export const Home = () => {
 
         <AnimationPage>
             <div className='container-home'>
-                <SwiperNewClothes />
+                {/* <SwiperNewClothes />
                 <div className='container-presentation'>
                     <div className='presentation'>
                         <div className='container-img'>
@@ -26,7 +26,7 @@ export const Home = () => {
                 <div className='all-collection'>
                     <h1>COLECCIÓN</h1>
                     <AllCollection />
-                </div>
+                </div> */}
             </div>
         </AnimationPage>
     )

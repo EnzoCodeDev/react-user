@@ -10,7 +10,7 @@ export const About = () => {
     let navigate = useNavigate();
     return (
         <AnimationPage>
-            <div className='about'>
+            {/* <div className='about'>
                 <div className='about-container'>
                     <div className='conatiner-breadcrumb'>
                         <Breadcrumb separator=">" >
@@ -41,7 +41,7 @@ export const About = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </AnimationPage>
     )
 }

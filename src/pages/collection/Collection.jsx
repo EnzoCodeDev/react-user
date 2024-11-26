@@ -9,7 +9,7 @@ export const Collection = () => {
     let navigate = useNavigate();
     return (
         <AnimationPage>
-            <div className='all-collection'>
+            {/* <div className='all-collection'>
                 <div className='container-collection'>
                     <div className='conatiner-breadcrumb'>
                         <Breadcrumb separator=">" >
@@ -21,7 +21,7 @@ export const Collection = () => {
                         <AllCollection />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </AnimationPage>
     )
 }
