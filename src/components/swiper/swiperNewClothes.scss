@@ -1,164 +1,123 @@
 @import "../../styles/base/mixinResponse";
 
+
 .seccion-proyect {
-    border-bottom: 1px solid #605c4e80;
-    height: auto;
-}
-
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination {
-    color: #b67d12 !important;
-    background-color: transparent;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #b67d12 !important;
-}
-
-.swiper {
     width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-
-    /* Center slide text vertically */
+    padding: 40px 0;
+    background-color: #f4f4f4; // Fondo claro para todo el área
+  }
+  .container-swiper {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%; /* Asegura que el contenedor use todo el ancho disponible */
+  }
+  
+  @media (max-width: 768px) {
+    .container-swiper {
+      padding: 0 20px; /* Agrega algo de relleno en dispositivos pequeños */
+    }
+  }
+  
+  
+  .mySwiper {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.container-img-header {
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 5;
-}
-
-.container {
-    background-color: #8c8c8c;
-    margin: auto;
-
-    @include desktop {
-        height: 528px;
-    }
-
-    @include tablet {
-        height: 428px;
-    }
-
-    @include mobile {
-        height: 328px;
-    }
-
-    .container-header {
-        height: 100%;
-        position: relative;
-        z-index: 0;
-    }
-}
-
-.container-text {
-    background-color: transparent;
-    color: #faebd7;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-header {
     display: flex;
     flex-direction: column;
-    height: 90%;
+    align-items: center;
     justify-content: center;
     position: relative;
-    text-align: start;
-    margin-left: 10%;
-
-    @include desktop {
-        height: 90%;
-    }
-
-    @include tablet {
-        height: 90%;
-    }
-
-    @include mobile {
-        height: 100%;
-        margin-left: 12%;
-    }
-
-    p {
-        background-color: transparent;
-        margin-top: 0;
-        margin-bottom: 1rem;
-        z-index: 10;
-    }
-
-    &__1 {
-        color: #fdfcfc;
-        font-weight: 700;
-        font-family: Nunito Sans;
-
-        @include desktop {
-            font-size: 15px;
-            letter-spacing: 8px;
-        }
-
-        @include tablet {
-            font-size: 15px;
-            letter-spacing: 7px;
-        }
-
-        @include mobile {
-            font-size: 11px;
-            letter-spacing: 4px;
-        }
-    }
-
-    &__2 {
-        color: #fdfcfc;
-        font-family: Cinzel;
-
-        @include desktop {
-            font-size: 60px;
-        }
-
-        @include tablet {
-            font-size: 55px;
-        }
-
-        @include mobile {
-            font-size: 27px;
-        }
-    }
-
-    .buttom {
-        text-align: center;
-        background-color: #b8934e;
-        z-index: 10;
-
-        @include desktop {
-            font-size: 15px;
-            max-width: 200px;
-        }
-
-        @include tablet {
-            font-size: 15px;
-            max-width: 200px;
-        }
-
-        @include mobile {
-            font-size: 13px;
-            max-width: 140px;
-        }
-
-        &:hover {
-            background-color: #b67d12;
-        }
-    }
+    width: 100%;
+  }
+  
+  .container-img-header {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .container-img-header:hover {
+    transform: scale(1.05); // Efecto hover para la imagen
+  }
+  
+  .container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: transparent // Fondo oscuro translúcido para el texto
+  }
+  
+  .container-text__2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+.buttom {
+  background-color: #007bff; /* Color de fondo */
+  border: 2px solid transparent; /* Borde transparente */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor a mano */
+  transition: background-color 0.3s ease; /* Transición suave */
+  position: absolute; /* Coloca el botón en la parte inferior */
+  left: 50%; /* Centra el botón horizontalmente */
+  bottom: -30px; /* Lo coloca a 20px del borde inferior */
+  transform: translateX(-50%); /* Ajusta el botón para que quede centrado */
 }
+
+.buttom:hover {
+  background-color: #0056b3; /* Cambia el fondo al pasar el ratón */
+}
+
+  
+  @media screen and (max-width: 768px) {
+    .container-text__2 {
+      font-size: 18px;
+    }
+  
+    .buttom {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container-text__2 {
+      font-size: 16px;
+    }
+  
+    .buttom {
+      padding: 6px 14px;
+      font-size: 12px;
+    }
+  }
