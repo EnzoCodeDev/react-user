@@ -19,13 +19,13 @@ export const SwiperNewClothes = () => {
         title: "",
         redirect: "producto-nuevo",
         img: [
-            "src/assets/carruselImagenes/carrusel1.jpg",
-            "src/assets/carruselImagenes/carrusel2.jpg",
-            "src/assets/carruselImagenes/carrusel3.jpg",
-            "src/assets/carruselImagenes/carrusel4.jpg",
-
+            "/src/assets/carruselImagenes/carrusel1.jpg",
+            "/src/assets/carruselImagenes/carrusel2.jpg",
+            "/src/assets/carruselImagenes/carrusel3.jpg",
+            "/src/assets/carruselImagenes/carrusel4.jpg",
         ]
-    }
+    };
+
     return (
         <section id="proyect" className="seccion-proyect">
             <div className='container-swiper'>
@@ -54,17 +54,7 @@ export const SwiperNewClothes = () => {
                                     />
                                     <div className="container-text">
                                         <p className="container-text__2">{productActual['title']}</p>
-                                        <Button
-                                            onClick={() => {
-                                                Scroll.animateScroll.scrollToTop();
-                                                navigate(`/detail/${productActual['redirect']}`);
-                                            }}
-                                            className="buttom"
-                                            size="large"
-                                            type="primary"
-                                        >
-                                            Consulte aquí
-                                        </Button>
+
                                     </div>
                                 </div>
                             </div>
