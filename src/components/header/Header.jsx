@@ -1,7 +1,7 @@
 import "./header.scss";
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { MdWhatsapp, MdFacebook } from "react-icons/md";
+import { MdWhatsapp, MdFacebook, MdStyle } from "react-icons/md";
 import { TbBrandTiktok, TbBrandInstagram } from "react-icons/tb";
 import Scroll from 'react-scroll';
 import logo from '../../assets/majos/logo.png'

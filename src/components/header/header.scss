@@ -23,6 +23,7 @@
     transition-duration: 300ms;
     top: 0;
     z-index: 10;
+    
 }
 
 .container-sub-main {
@@ -143,7 +144,7 @@
             .not-selected {
                 font-family: Cinzel;
                 font-size: 17px;
-                color: #b67d12;
+                color: rgb(0, 183, 255);
 
                 @include desktop {
                     font-size: 17px;
