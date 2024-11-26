@@ -1,11 +1,9 @@
-import './planAccionComunal.scss';
+import './planAccionComunalDetails.scss';
 import { useEffect, useState } from 'react'
 import { AnimationPage } from '../../components/animation/AnimationPage';
 import { planAccionComunalService } from '../../services/planAccionComunalService';
-import { useNavigate } from 'react-router-dom';
 
-export const PlanAccionComunal = () => {
-    let navigate = useNavigate();
+export const PlanAccionComunalDetails = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
         planAccionComunalService.getLineStrategies().then((resp) => {
@@ -17,7 +15,7 @@ export const PlanAccionComunal = () => {
         <AnimationPage>
             <div className="card-container">
                 {data.map((item, index) => (
-                    <div className="card" key={index} onClick={() => navigate(`/plan-accion-comunal/${item}`)}>
+                    <div className="card" key={index}>
                         <h2 className="card-title">{item}</h2>
                     </div>
                 ))}

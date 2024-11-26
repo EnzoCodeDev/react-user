@@ -10,6 +10,7 @@ import { About } from "../pages/about/About";
 import { SizeGuides } from "../pages/size-guides/SizeGuides";
 import { ReturnWarrantiesPage } from "../pages/returns-warranties-page/ReturnWarrantiesPage";
 import { PlanAccionComunal } from "../pages/planAccionComunal/PlanAccionComunal";
+import { PlanAccionComunalDetails } from "../pages/planAccionComunalDetails/planAccionComunalDetails";
 export const AppRouter = () => {
   return (
     <BrowserRouter >
@@ -26,6 +27,7 @@ export const AppRouter = () => {
             <Route path="size-guides" exact element={<SizeGuides />} />
             <Route path="return-warranties" exact element={<ReturnWarrantiesPage />} />
             <Route path="plan-accion-comunal" exact element={<PlanAccionComunal />} />
+            <Route path="plan-accion-comunal/:plan" exact element={<PlanAccionComunalDetails />} />
             **<Route path="*" element={<Home />}></Route>**
           </Routes>
         </div>
