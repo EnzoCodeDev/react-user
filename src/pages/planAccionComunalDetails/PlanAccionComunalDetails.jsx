@@ -2,14 +2,17 @@ import './planAccionComunalDetails.scss';
 import { useEffect, useState } from 'react'
 import { AnimationPage } from '../../components/animation/AnimationPage';
 import { planAccionComunalService } from '../../services/planAccionComunalService';
+import { useParams } from 'react-router-dom';
 
 export const PlanAccionComunalDetails = () => {
     const [data, setData] = useState([]);
+    let { plan } = useParams();
     useEffect(() => {
-        planAccionComunalService.getLineStrategies().then((resp) => {
-            setData(resp['data']['data']);
+        planAccionComunalService.getLineStrategiesDetails(plan).then((resp) => {
+            // setData(resp['data']['data']);
+            console.log(resp);
         });
-    }, []);
+    }, [plan]);
 
     return (
         <AnimationPage>

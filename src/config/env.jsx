@@ -1,12 +1,12 @@
 //Manejo de variables de entorno para toda la aplicación
 let envDeveloment = {
     mode: 'development',
-    url: "http://127.0.0.1:8000/api/"
+    url: "https://d6e0-200-110-173-134.ngrok-free.app/api/"
 };
 
 let envProduction = {
     mode: 'production',
-    url: "http://127.0.0.1:8000/api/"
+    url: "https://d6e0-200-110-173-134.ngrok-free.app/api/"
 };
 
 export default (import.meta.env.MODE === 'development') ? envDeveloment : envProduction;
