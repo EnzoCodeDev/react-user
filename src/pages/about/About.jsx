@@ -24,7 +24,7 @@ export const About = () => {
                             <img className="logo" src={about1} alt="Logo SMSE" />
                         </div>
                         <div className='container-text-about'>
-                            <h3>Sistema de Monitoreo, Seguimiento y Evaluación (SMSE)</h3>
+                            <h3>   Sistema de Monitoreo, Seguimiento y Evaluación (SMSE)</h3>
                             <p>Monitoreamos y evaluamos las políticas relacionadas con primera infancia, infancia y adolescencia; vejez y envejecimiento; acción comunal y juventudes del Valle del Cauca.</p>
                             <span>Presentado por Michel Pizarro - November 5, 2024</span>
                         </div>
