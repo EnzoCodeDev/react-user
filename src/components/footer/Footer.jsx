@@ -50,7 +50,7 @@ let footerInfo = [{
     redirect: false,
     openWindow: false,
   }, {
-    text: 'PBX: +57 (602) 620 00 00 ',
+    text: '+57 (602) 620 00 00 ',
     redirect: false,
     openWindow: false,
   }, {

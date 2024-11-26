@@ -1,10 +1,11 @@
 body {
     overflow-x: hidden;
+    font-family: 'Droid Sans', sans-serif;
   }
 @import '../../styles/base/mixinResponse';
-
+  
 .container-main-footer {
-    background-color: #f5f3ef;
+    background-color: rgba(37, 119, 167, 0.26);
 
     @include desktop {
         padding: 40px 100px 70px 0px;
@@ -37,12 +38,13 @@ body {
             display: block;
             text-align: center;
         }
+        
 
         .cotainer-setion-footer {
             span {
                 font-family: Cinzel;
                 text-transform: uppercase;
-                color: #867140;
+                color: black;
                 font-size: 17px;
             }
 
