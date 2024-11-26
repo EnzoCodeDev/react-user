@@ -4,6 +4,7 @@
     .container-presentation {
         background-color: #f5f3ef;
         width: 100%;
+        padding-top: center;
 
         @include desktop {
             min-height: 620px;
