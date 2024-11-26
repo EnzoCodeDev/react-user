@@ -2,7 +2,7 @@ import './home.scss';
 import React from 'react';
 import { AnimationPage } from '../../components/animation/AnimationPage';
 import { SwiperNewClothes } from '../../components/swiper/SwiperNewClothes';
-import welcome from '../../assets/majos/welcome.jpg';
+import welcome from '../../assets/carruselImagenes/logo-person.jpeg';
 import { AllCollection } from '../../components/all-collection/AllCollection';
 export const Home = () => {
     return (
@@ -16,16 +16,14 @@ export const Home = () => {
                         </div>
                         <div className='container-description'>
                             <h2>BIENVENIDO</h2>
-                            <p>En MAJO`S creemos que la moda no tiene porqué dañar nuestro planeta, somos conscientes y parcialmente sostenibles.</p>
-                            <p>Se produce una colección de una sola prenda al mes, la cual tiene una producción limitada. Las telas, en su mayoría, son con tejidos reciclados o fibras naturales. La estampación y color se obtiene por sublimación, no se utiliza agua en el proceso.</p>
-                            <p>Conócenos mejor</p>
+                            <p>"Bienvenidos a esta sesión especial, en la que compartiremos con ustedes los avances alcanzados en las iniciativas impulsadas por el Gobierno. Hoy, reafirmamos nuestro compromiso con la transparencia, el progreso y el bienestar de nuestra nación. Este espacio es una oportunidad para dar cuenta de los resultados obtenidos y proyectar los próximos pasos hacia las metas trazadas, siempre en beneficio de nuestra sociedad. Gracias por acompañarnos en este camino hacia un futuro más prometedor para todos."</p>
                         </div>
                     </div>
                 </div>
-                <div className='all-collection'>
-                    <h1>COLECCIÓN</h1>
+                {/* <div className='all-collection'>
+                    <h1>NOTICIAS</h1>
                     <AllCollection />
-                </div>
+                </div> */}
             </div>
         </AnimationPage>
     )
