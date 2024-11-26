@@ -4,13 +4,11 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { MdWhatsapp, MdFacebook } from "react-icons/md";
 import { TbBrandTiktok, TbBrandInstagram } from "react-icons/tb";
 import Scroll from 'react-scroll';
-import { dataProducts } from "../../data/dataProducts";
 import logo from '../../assets/majos/logo.png'
 
 export const Header = () => {
   let location = useLocation();
   let scroll = Scroll.animateScroll;
-  let ultime = dataProducts['ultime'];
   let navigate = useNavigate();
   const [bg, setBg] = useState(false);
   const [locationState, setLocationState] = useState('');
@@ -19,13 +17,7 @@ export const Header = () => {
     name: 'INICIO',
     redirect: '/home',
   }, {
-    name: 'NUEVO',
-    redirect: `/detail/${ultime}`,
-  }, {
-    name: 'COLECCIÓN',
-    redirect: '/all-collection',
-  }, {
-    name: `MAJO'S`,
+    name: `SOBRE NOSOTROS`,
     redirect: '/about',
   }];
 
@@ -40,17 +32,17 @@ export const Header = () => {
 
   let socials = [{
     icon: <MdWhatsapp className="icon-social" />,
-    redirect: 'https://wa.me/message/VRYESG22ZYGPB1',
+    redirect: 'https://www.facebook.com/profile.php?id=100010397472525',
   }, {
     icon: <MdFacebook className="icon-social" />,
-    redirect: 'https://www.facebook.com/profile.php?id=100088500618624',
+    redirect: 'https://www.facebook.com/profile.php?id=100010397472525',
   }, {
     icon: <TbBrandInstagram className="icon-social" />,
-    redirect: 'https://www.instagram.com/majos_official/?fbclid=IwAR38fNRd5aYYSYy2HccUB6Av-Cwg32s-QBoYyf46eVviEOdzqAYvfB5ImBo',
+    redirect: 'https://www.facebook.com/profile.php?id=100010397472525',
   },
   {
     icon: <TbBrandTiktok className="icon-social" />,
-    redirect: 'https://www.tiktok.com/@majos_official?fbclid=IwAR2EJBkEh0-VlbP1opS7UZRzZaQeR-0ZDyHXkmMmVQbe8L8F4f_-URDTlwc',
+    redirect: 'https://www.facebook.com/profile.php?id=100010397472525',
   }];
 
   return (
